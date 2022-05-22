@@ -1,0 +1,98 @@
+body{
+background-color: #393E46;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+h2{
+  font-size: 2rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+.container{
+width:80%;
+margin: auto;
+
+}
+.header{
+  margin: 5% auto 5%;
+  font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    color: #4ECCA3;
+}
+.dice-box{
+display:flex;
+width: 40%;
+margin: auto;
+margin-bottom: 10%;
+}
+.player{
+width:40%;
+margin: auto;
+text-align: center;
+}
+.first{
+float: left;
+
+}
+.second{
+float: right;
+
+}
+.dice{
+  list-style: none;
+  padding: 4px;
+  background-color: tomato;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+box-sizing: border-box;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-areas:
+        "a . c"
+        "e g f"
+        "d . b";
+
+}
+.pip{
+  display: block;
+  align-self: center;
+  justify-self: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 4px;
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+.pip:nth-child(2) {
+    grid-area: b;
+}
+.pip:nth-child(3) {
+    grid-area: c;
+}
+.pip:nth-child(4) {
+    grid-area: d;
+}
+.pip:nth-child(5) {
+    grid-area: e;
+}
+.pip:nth-child(6) {
+    grid-area: f;
+}
+.pip:nth-child(odd):last-child {
+    grid-area: g;
+}
